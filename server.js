@@ -9,7 +9,7 @@ connectDB();
 app.use(express.json({ extended: false }));
 
 
-app.get('/', (req, res) => res.send('Srivar'));
+app.get('/', (req, res) => res.send('Srikar'));
 
 app.use('/api/users', require('./routes/api/users'));
 app.use('/api/auth', require('./routes/api/auth'));
