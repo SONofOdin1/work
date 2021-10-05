@@ -1,9 +1,13 @@
 const express = require('express');
+const { body } = require('express-validator');
 const connectDB = require('./config/db');
 
 const app = express();
 
 connectDB();
+
+app.use(express.json({ extended: false }));
+
 
 app.get('/', (req, res) => res.send('SN'));
 
