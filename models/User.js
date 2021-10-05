@@ -8,8 +8,12 @@ const UserSchema = new mongoose.Schema({
     email: {
         type: String,
         required: true,
-        unique: true,
-      },
+        unique: true
+    },
+    password: {
+     type: String,
+     required: true
+    },
       avatar: {
           type: String
       },
@@ -19,4 +23,4 @@ const UserSchema = new mongoose.Schema({
         }
     });
 
-    module.export = User = mongoose.model('user', UserSchema); 
+    module.exports = User = mongoose.model('user', UserSchema); 
