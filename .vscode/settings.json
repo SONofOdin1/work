@@ -1,3 +1,4 @@
 {
-    "editor.fontFamily": "FiraMono NF"
+    "editor.fontFamily": "FiraMono NF",
+    "git.ignoreLimitWarning": true
 }
