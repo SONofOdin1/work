@@ -1,7 +1,6 @@
 const express = require('express');
 const { body } = require('express-validator');
 const connectDB = require('./config/db');
-
 const app = express();
 
 connectDB();

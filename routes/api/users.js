@@ -7,7 +7,7 @@ const { check, validationResult } = require("express-validator");
 const User = require('../../models/User');
 
 // @route   POST api/users
-// @desc    Register user
+// @desc    Register user 
 // @access  Public
 router.post(
     '/',
@@ -55,9 +55,11 @@ router.post(
       user.password = await bcrypt.hash(password, salt);
 
       await user.save();
+    
+      
 
 
-
+        
 
         res.send('User registered');
     } catch(err) {
@@ -68,3 +70,5 @@ router.post(
 );
 
 module.exports = router;
+
+
