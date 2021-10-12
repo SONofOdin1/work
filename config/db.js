@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const config = require('config');
 const { Router } = require('express');
+const router = require('../routes/api/auth');
 const db = config.get('mongoURI');
 
 const connectDB = async () => {
@@ -16,7 +17,4 @@ const connectDB = async () => {
     }
 }
 
-module.exports = router;
-
-
-
+module.exports = connectDB;
